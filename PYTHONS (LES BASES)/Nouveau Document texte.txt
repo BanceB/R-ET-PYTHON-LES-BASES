@@ -1,0 +1,23 @@
+isnull()
+apply()
+unique()
+astype()
+index
+to_datetime()
+dt.hour
+sum().plot.bar()
+plot.line()
+duplicated(keep=False)]
+transform(lambda x: ','.join(x))
+drop_duplicates(subset=['Order ID'], inplace=True)
+
+pd.pivot_table(covid_df, values=['Confirmed', 'Deaths', 'Cured'], index='State/UnionTerritory',
+                           aggfunc=max
+                           )
+
+statewise.style.background_gradient(cmap='cubehelix')
+
+ax = sns.lineplot( data = covid_df[covid_df['State/UnionTerritory'].isin(['Maharashtra', 'Kamataka', 'Delhi', 'Tamil Nadu', 'Uttar Pradesh', 'West Bengal' ])], 
+                                   x = 'Date', y = 'Active Cases', hue = 'State/UnionTerritory' )
+
+vaccine_df.rename( columns = {'Updated On' : 'Vaccine_Date'}, inplace=True)
