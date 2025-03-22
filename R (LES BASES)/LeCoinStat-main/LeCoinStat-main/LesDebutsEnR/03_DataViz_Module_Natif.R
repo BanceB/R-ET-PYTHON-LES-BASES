@@ -15,7 +15,7 @@ if (!require(pacman)) install.packages("pacman")
 library(pacman)
 
 # Définir le chemin vers le dossier contenant les données
-chemin <- "/Users/natachanjongwayepnga/Documents/GitHub/LeCoinStat/LesDebutsEnR/data"
+chemin <- "C:\\Users\\Mr_B\\Desktop\\R ET PYTHON LES BASES\\R (LES BASES)\\LeCoinStat-main\\LeCoinStat-main\\LesDebutsEnR\\data"
 
 # Importer des données depuis un fichier CSV
 # -----------------------------------------

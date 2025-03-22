@@ -12,16 +12,20 @@ if (!require(pacman)) install.packages("pacman")
 library(pacman)
 
 # Définir le chemin vers le dossier contenant les données
-chemin <- "/Users/natachanjongwayepnga/Documents/GitHub/LeCoinStat/LesDebutsEnR/data"
+chemin <- "\\Users\\Mr_B\\Desktop\\R ET PYTHON LES BASES\\R (LES BASES)\\LeCoinStat-main\\LeCoinStat-main\\LesDebutsEnR\\data"
+
+?paste0
 
 # Importer des données depuis un fichier CSV
 # -----------------------------------------
+# paste0(),  permet de créer un chemin de fichier en concaténant un chemin de dossier avec un nom de fichier CSV
 # Utiliser read.csv() pour lire des fichiers CSV.
 chemin_csv <- paste0(chemin, "/donnees_entreprise.csv")
 chemin_csv
 donnees_csv <- read.csv(chemin_csv,sep = ",",dec=".",header = T)
 ?read.csv
-View(donnees_csv)
+
+
 
 # Importer des données depuis un fichier TXT
 # ------------------------------------------
@@ -41,7 +45,7 @@ library(readxl)
 # Lire un fichier Excel. 
 chemin_excel <- paste0(chemin, "/donnees_entreprise.xlsx")
 donnees_excel <- read_excel(chemin_excel)
-donnees_excel <- readxl::read_excel(chemin_excel)
+donnees_excel <- readxl::read_excel(chemin_excel)  #fonctionne sans utiliser library(readxl)
 View(donnees_excel)
 ?readxl
 

@@ -50,11 +50,10 @@ if (require(ggplot2)) {
 
 
 #  Installation d'un package disponible sur github ------------------------
+# devtools est un package permettant d'installer directement des packages R depuis GitHub ou
+#  d'autres sources en dehors de CRAN (Comprehensive R Archive Network).
 #devtools::install_github("user/package")
 
-if (!require("devtools")) install.packages("devtools")
-library("devtools")
-install_github("kassambara/factoextra")
 
 
 # Le Package magique en R --------------------------------------------------
@@ -67,7 +66,6 @@ if (!require(pacman)) install.packages("pacman")
 
 # Maintenant, nous chargeons 'pacman' pour pouvoir l'utiliser.
 library(pacman)
-re
 
 # Avec 'pacman', nous pouvons installer des packages si nécessaire et les charger directement.
 # Voici comment nous pouvons installer et charger le package 'ggplot2' par exemple.
